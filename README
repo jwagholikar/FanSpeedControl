@@ -1,0 +1,43 @@
+/******************************/
+  Fan Controller Application
+/*****************************/
+1. Input to Test.txt
+ a. No. of subsystems. Max_SUB_SYSTEM are 10
+ b. No. of fans   MAX_FANS are 6
+ c. Asummption: For each next line user should provide PWM count for each fan at 100% Duty Cycle. 
+ d. The temperature for subsystem is generated in double from random number generator between 0 to 100. 
+ e. It is written periodically by subsystem process.  
+
+2. The TopWrapper process forks FanController process and process for each subsystem
+
+3. IPC between fan controller and subsystem is created through shared memory. 
+  a. Shared memory to read/write temperature. 
+
+4. SubSystem processes read from random number generator temperature after periodic sleep.
+     a. Random number generator is provided with different seed for each subsystem. 
+
+4. Fan controller process reads temperature from all subsystem if there is any change. 
+
+5. Interpolation method  for temperature between 25 to 75 oc
+  
+   (PWM Count)@currMaxTemp = (PWMCount)@20%DutyCycle + (((PWMCount)@100%DutyCycle -(PWMCount)@20%DutyCycle)/(75-25))*(CurrMaxTemp - 25)
+
+6. PWM counts are written to the register bank with max number of fan counts. 
+
+6. Command to build:
+
+    make all
+
+7. Command to Clean:
+   
+   make clean
+
+8. Command to run:
+
+  ./TopWrapper
+ 
+9. To change input
+   Change Test.txt file.
+
+10. How to stop program 
+     ctrl-c

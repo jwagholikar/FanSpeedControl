@@ -39,6 +39,8 @@ The input used is test.txt with following assumption.
  
  # change input
    Test.txt file.
-
-10. How to stop program 
+   
+ # To Stop   
+ It's a continuous loop. use ctrl-z
+ 
      ctrl-c

@@ -37,7 +37,7 @@
   ./TopWrapper
  
  # change input
-   Change Test.txt file.
+   Test.txt file.
 
 10. How to stop program 
      ctrl-c

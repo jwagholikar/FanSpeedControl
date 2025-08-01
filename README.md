@@ -1,7 +1,7 @@
-/******************************/
-  Fan Controller Application
-/*****************************/
-1. Input to Test.txt
+
+#  Fan Controller Application
+
+# Input to Test.txt
  a. No. of subsystems. Max_SUB_SYSTEM are 10
  b. No. of fans   MAX_FANS are 6
  c. Asummption: For each next line user should provide PWM count for each fan at 100% Duty Cycle. 
@@ -24,19 +24,19 @@
 
 6. PWM counts are written to the register bank with max number of fan counts. 
 
-6. Command to build:
+# Command to build:
 
     make all
 
-7. Command to Clean:
+# Command to Clean:
    
    make clean
 
-8. Command to run:
+# Command to run:
 
   ./TopWrapper
  
-9. To change input
+ # change input
    Change Test.txt file.
 
 10. How to stop program 

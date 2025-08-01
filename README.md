@@ -1,7 +1,8 @@
 
 #  Fan Controller Application
 
-# Input to Test.txt
+# Input
+The input used is test.txt with following assumption. 
  a. No. of subsystems. Max_SUB_SYSTEM are 10
  b. No. of fans   MAX_FANS are 6
  c. Asummption: For each next line user should provide PWM count for each fan at 100% Duty Cycle. 

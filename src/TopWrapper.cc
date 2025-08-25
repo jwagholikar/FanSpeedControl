@@ -2,7 +2,6 @@
 * Top Process which read input parameters validates and forks fancontroller
 * and subsystem processes. 
 * 
-* @author  Jyoti Wagholikar
 * @version 1.0
 *
 **/
@@ -122,3 +121,4 @@ int main(){
     while ((child_pid = wait(nullptr)) > 0)
         cout << "child " << child_pid << " terminated" << endl;      
 }
+

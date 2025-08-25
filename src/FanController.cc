@@ -1,7 +1,6 @@
 /**
 * FanController Process controls fan durty cycle by
 * setting hw registers with PWM count based on susbsystem temperature. 
-* @author  Jyoti Wagholikar
 * @version 1.0
 *
 **/
@@ -77,3 +76,4 @@ int main(int arc, char* argv[])
      
     exit(EXIT_SUCCESS);
 }
+

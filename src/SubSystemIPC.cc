@@ -1,7 +1,6 @@
 /**
 * Subsystem helper IPC functions to read/write to shared memory
 * 
-* @author  Jyoti Wagholikar
 * @version 1.0
 *
 **/
@@ -57,4 +56,5 @@ void SubSystemIPC::destroyIPC(int shmId){
     // destroy the shared memory
     shmctl(shmId,IPC_RMID,NULL);
 }
+
 

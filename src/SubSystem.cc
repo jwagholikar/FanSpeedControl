@@ -1,7 +1,6 @@
 /**
 * Subsystem Process write temeprature periodically into shared memory
 * with IPC APIs.
-* @author  Jyoti Wagholikar
 * @version 1.0
 *
 **/
@@ -45,3 +44,4 @@ int main(int argc, char* argv[])
     }
     exit(EXIT_SUCCESS);
 }
+

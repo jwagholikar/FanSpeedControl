@@ -26,21 +26,26 @@ The input used is test.txt with following assumption.
 6. PWM counts are written to the register bank with max number of fan counts. 
 
 # Command to build:
-
+```bash
     make all
+```
 
 # Command to Clean:
-   
+```bash   
    make clean
-
+```
 # Command to run:
-
+```bash
   ./TopWrapper
+ ```
  
  # change input
-   Test.txt file.
+```bash
+Test.txt file.
+```
    
  # To Stop   
+```bash
  It's a continuous loop. use ctrl-z
- 
-     ctrl-c
+ ctrl-c
+ ```

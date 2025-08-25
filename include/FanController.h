@@ -2,7 +2,6 @@
 * FanController Header file for some defintions and macros to read/write
 * fan hw registers.
 * 
-* @author  Jyoti Wagholikar
 * @version 1.0
 *
 **/

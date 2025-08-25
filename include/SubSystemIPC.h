@@ -1,7 +1,6 @@
 /**
 * SubSystemIPC class declaration. 
 * 
-* @author  Jyoti Wagholikar
 * @version 1.0
 *
 **/

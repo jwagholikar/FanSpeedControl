@@ -48,7 +48,7 @@ int main(){
      fstream newTest;
 
      // Read Only Test File  
-     newTest.open("Test.txt",ios::in);
+     newTest.open("data/Test.txt",ios::in);
 
      if (newTest.is_open()){
       string tp;

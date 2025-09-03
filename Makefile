@@ -5,20 +5,20 @@
  
 CC = g++
 CFLAGS = -Wall -g
- 
+CXXFLAGS = -I./include 
 # ****************************************************
 # Targets needed to bring the executable up to date
  
-TopWrapper: TopWrapper.o SubSystemIPC.o
-	$(CC) $(CFLAGS) -o TopWrapper TopWrapper.o SubSystemIPC.o
+TopWrapper: src/TopWrapper.o src/SubSystemIPC.o
+	$(CC) $(CXXFLAGS) $(CFLAGS) -o TopWrapper src/TopWrapper.o src/SubSystemIPC.o
 
-SubSystem: SubSystem.o SubSystemIPC.o
-	$(CC) $(CFLAGS) -o SubSystem SubSystem.o SubSystemIPC.o
+SubSystem: src/SubSystem.o src/SubSystemIPC.o
+	$(CC) $(CXXFLAGS) $(CFLAGS) -o SubSystem src/SubSystem.o src/SubSystemIPC.o
 
-FanController: FanController.o SubSystemIPC.o
-	$(CC) $(CFLAGS) -o FanController FanController.o SubSystemIPC.o
+FanController: src/FanController.o src/SubSystemIPC.o
+	$(CC) $(CXXFLAGS) $(CFLAGS) -o FanController src/FanController.o src/SubSystemIPC.o
 
 all: TopWrapper SubSystem FanController 
 
 clean :
-	-rm *.o $(objects) TopWrapper SubSystem FanController
+	-rm src/*.o $(objects) TopWrapper SubSystem FanController

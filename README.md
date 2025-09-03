@@ -42,6 +42,9 @@ The input used is test.txt with following assumption.
  # change input
 ```bash
 Test.txt file.
+Number of subsystems 
+Number of Fans
+PWM counts
 ```
    
  # To Stop   
